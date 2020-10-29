@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainScreen"
+    >
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="alpha.soft.weather.ui.screens.MainScreen">
+        <action
+            android:id="@+id/action_mainScreen_to_itemScreen"
+            app:destination="@id/itemScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_aboutScreen"
+            app:destination="@id/aboutScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_criteriaScreen"
+            app:destination="@id/criteriaScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_useInfoScreen"
+            app:destination="@id/useInfoScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_soilScreen"
+            app:destination="@id/soilScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_newsLetterScreen"
+            app:destination="@id/newsLetterScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_languageScreen"
+            app:destination="@id/languageScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_contactScreen"
+            app:destination="@id/contactScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_mapScreen"
+            app:destination="@id/mapScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_connectScreen"
+            app:destination="@id/connectScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemScreen"
+        android:name="alpha.soft.weather.ui.screens.ItemScreen">
+        <action
+            android:id="@+id/action_itemScreen_to_mapScreen"
+            app:destination="@id/mapScreen" />
+        <action
+            android:id="@+id/action_itemScreen_to_aboutScreen"
+            app:destination="@id/aboutScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutScreen"
+        android:name="alpha.soft.weather.ui.screens.AboutScreen"
+        android:label="AboutScreen" />
+    <fragment
+        android:id="@+id/criteriaScreen"
+        android:name="alpha.soft.weather.ui.screens.CriteriaScreen"
+        android:label="CriteriaScreen" />
+    <fragment
+        android:id="@+id/useInfoScreen"
+        android:name="alpha.soft.weather.ui.screens.UseInfoScreen"
+        android:label="UseInfoScreen">
+        <action
+            android:id="@+id/action_useInfoScreen_to_newsScreen"
+            app:destination="@id/newsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterCriteriaScreen"
+        android:name="alpha.soft.weather.ui.screens.WaterCriteriaScreen"
+        android:label="WaterCriteriaScreen" />
+    <fragment
+        android:id="@+id/soilScreen"
+        android:name="alpha.soft.weather.ui.screens.SoilScreen"
+        android:label="SoilScreen" />
+    <fragment
+        android:id="@+id/newsLetterScreen"
+        android:name="alpha.soft.weather.ui.screens.NewsLetterScreen"
+        android:label="NewsLetterScreen">
+        <action
+            android:id="@+id/action_newsLetterScreen_to_waterCriteriaScreen"
+            app:destination="@id/waterCriteriaScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageScreen"
+        android:name="alpha.soft.weather.ui.screens.LanguageScreen"
+        android:label="LanguageScreen" />
+    <fragment
+        android:id="@+id/contactScreen"
+        android:name="alpha.soft.weather.ui.screens.ContactScreen"
+        android:label="ContactScreen" />
+    <fragment
+        android:id="@+id/mapScreen"
+        android:name="alpha.soft.weather.ui.screens.MapScreen"
+        android:label="MapScreen">
+        <action
+            android:id="@+id/action_mapScreen_to_mapInfoScreen"
+            app:destination="@id/mapInfoScreen" />
+        <action
+            android:id="@+id/action_mapScreen_to_itemScreen"
+            app:destination="@id/itemScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapInfoScreen"
+        android:name="alpha.soft.weather.ui.screens.MapInfoScreen"
+        android:label="MapInfoScreen" />
+    <fragment
+        android:id="@+id/newsScreen"
+        android:name="alpha.soft.weather.ui.screens.NewsScreen"
+        android:label="NewsScreen" />
+    <fragment
+        android:id="@+id/connectScreen"
+        android:name="alpha.soft.weather.ui.screens.ConnectScreen"
+        android:label="ConnectScreen" />
+</navigation>

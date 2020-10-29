@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/criteria_background"
+    android:paddingStart="8dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/titleAdapter"
+        style="@style/DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/titlenew"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/value_one_adapter"
+        style="@style/DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/value_two_adapter"
+        style="@style/DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="0.6"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/value_three_adapter"
+        style="@style/DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="03"
+        android:textSize="13sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

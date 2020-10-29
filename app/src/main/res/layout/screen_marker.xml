@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_header"
+                        style="@style/DefaultTextView"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="ПНЗ №14 - автоматическая" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/DefaultTextView"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_header"
+                        tools:text="г. Ташкент, Яшнабадский р-он, ул.Истикбол, 25" />
+
+                    <TextView
+                        android:id="@+id/tv_weather"
+                        style="@style/DefaultTextView"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="@string/weather"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layout_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tv_weather">
+
+                        <TextView
+                            android:id="@+id/tv_city"
+                            style="@style/DefaultTextView"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="16sp"
+                            tools:text="г. Ташкент" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/DefaultTextView"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/colorTextSubtitle"
+                            android:textSize="16sp"
+                            tools:text="г. Ташкент" />
+
+                        <ImageView
+                            android:id="@+id/iv_weather"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="4dp"
+                            tools:src="@drawable/ic_location" />
+
+                        <TextView
+                            android:id="@+id/tv_celsius"
+                            style="@style/DefaultTextView"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="24sp"
+                            tools:text="+ 18.8" />
+
+                        <TextView
+                            android:id="@+id/tv_subtitle"
+                            style="@style/DefaultTextView"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textColor="@color/colorTextSubtitle"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            tools:text="г. Ташкент" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/colorDivider" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/layout_city">
+
+                        <TextView
+                            android:id="@+id/tv_si"
+                            style="@style/DefaultTextView"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/ci"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_ci"
+                            style="@style/DefaultTextView"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/tv_si_background"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:paddingTop="1dp"
+                            android:paddingEnd="1dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_si"
+                            app:layout_constraintLeft_toRightOf="@id/tv_si"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="4" />
+
+                        <TextView
+                            android:id="@+id/tv_recommended"
+                            style="@style/DefaultTextView"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="@string/recommended"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_si" />
+
+                        <ImageView
+                            android:id="@+id/iv_recommended"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="12dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_recommended"
+                            tools:src="@drawable/ic_icons_02" />
+
+                        <TextView
+                            android:id="@+id/tv_recommended_text"
+                            style="@style/DefaultTextView"
+                            android:layout_width="0dp"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/iv_recommended"
+                            app:layout_constraintTop_toTopOf="@+id/iv_recommended"
+                            tools:text="Носить маску, ограничить пребывание на улице" />
+
+                        <TextView
+                            android:id="@+id/tv_refresh"
+                            style="@style/DefaultTextView"
+                            android:layout_marginTop="24dp"
+                            android:text="@string/refresh"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_recommended_text" />
+
+                        <TextView
+                            android:id="@+id/tv_refresh_date"
+                            style="@style/DefaultTextView"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_refresh"
+                            app:layout_constraintLeft_toRightOf="@id/tv_refresh"
+                            tools:text="24.07.2020, 9:00" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_concentrations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/card_main"
+                tools:itemCount="6"
+                tools:listitem="@layout/item_concentrations" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintTop_toBottomOf="@id/rv_concentrations">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_table_si"
+                        style="@style/DefaultTextView"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="@string/table_si"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/table_background"
+                        app:layout_constraintTop_toBottomOf="@id/tv_table_si">
+
+                        <TextView
+                            style="@style/DefaultTextView"
+                            android:layout_marginStart="48dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="@string/date"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/DefaultTextView"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="@string/si"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_graphic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_body_background"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/layout_data"
+                        tools:itemCount="7"
+                        tools:listitem="@layout/item_graphic" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

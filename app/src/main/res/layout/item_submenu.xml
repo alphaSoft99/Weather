@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/DefaultTextView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorTextSubtitle"
+        android:textSize="16sp"
+        tools:text="@tools:sample/lorem" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

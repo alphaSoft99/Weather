@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/group_action_info"
+        >
+        <item
+            android:id="@+id/action_info"
+            android:title="@string/info"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_outline_info_24"
+            />
+    </group>
+</menu>

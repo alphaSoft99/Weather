@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/DefaultTextView"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="48dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="16sp"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <TextView
+        android:id="@+id/tv_si"
+        style="@style/DefaultTextView"
+        android:layout_width="36dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/text_day_background"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        tools:text="3" />
+</FrameLayout>

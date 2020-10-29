@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:gravity="center_vertical">
+
+    <View
+        android:id="@+id/view"
+        style="@style/DefaultTextView"
+        android:layout_width="45dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/view_background" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/DefaultTextView"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="16sp"
+        tools:text="@tools:sample/date/ddmmyy" />
+</androidx.appcompat.widget.LinearLayoutCompat>
