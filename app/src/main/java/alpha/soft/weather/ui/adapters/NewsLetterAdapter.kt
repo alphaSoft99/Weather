@@ -1,13 +1,16 @@
 package alpha.soft.weather.ui.adapters
 
+import alpha.soft.weather.R
 import alpha.soft.weather.databinding.ItemNewsLetterBinding
 import alpha.soft.weather.model.NewsLetterData
 import alpha.soft.weather.utils.extensions.gone
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -51,6 +54,7 @@ class NewsLetterAdapter(private val itemInterface: ItemInterface) :
                     if(it.izv == ""){
                         tv_count.backgroundTintList =
                             ColorStateList.valueOf(Color.parseColor("#00FFFFFF"))
+                        tv_count.typeface = ResourcesCompat.getFont(this.context, R.font.montserrat_medium)
                         tv_izv.gone()
                         tv_count.setTextColor(ColorStateList.valueOf(Color.parseColor("#000000")))
                     }

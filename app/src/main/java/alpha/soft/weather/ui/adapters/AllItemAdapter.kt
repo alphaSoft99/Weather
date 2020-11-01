@@ -19,11 +19,8 @@ import kotlinx.android.synthetic.main.item_all.view.*
 class AllItemAdapter(private val itemInterface: ItemInterface) :
     ListAdapter<AllItem, AllItemAdapter.ViewHolder>(DiffUtilImp) {
 
-    private var _binding: ItemAllBinding? = null
-    private val binding get() = _binding!!
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        _binding = ItemAllBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemAllBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding.root)
     }
 
@@ -40,7 +37,6 @@ class AllItemAdapter(private val itemInterface: ItemInterface) :
             return oldAllItem == newAllItem
         }
     }
-
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 

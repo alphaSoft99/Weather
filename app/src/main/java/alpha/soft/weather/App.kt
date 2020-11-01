@@ -35,6 +35,7 @@ open class App : Application() {
         var instance: App? = null
             private set
     }
+
     override fun attachBaseContext(context: Context) {
         super.attachBaseContext(context)
         MultiDex.install(this)
@@ -79,5 +80,4 @@ open class App : Application() {
     open fun getApiComponent(): UserApiComponent {
         return apiComponent
     }
-
 }
