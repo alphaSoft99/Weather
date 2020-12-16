@@ -62,7 +62,7 @@
     <string name="uzbek">Узбекский</string>
     <string name="eng">Английский</string>
     <string name="english">Английский</string>
-    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiZmxpb3NhbiIsImEiOiJja2Y5NmpicmYwajM1MnNwcG0zODk1OGtrIn0.uWaNunKMZKL_NCqz28XSSQ</string>
+    <string name="mapbox_access_token" translatable="false"></string>
     <string name="map_info">Наблюдение за состоянием атмосферного воздуха ведутся на 63 стационарных пунктах наблюдения. Наблюдения проводятся ежедневно с периодичностью 3 раза в стуки (7:00; 13:00; 19:00 по местному времени)</string>
     <string name="map_info_subtitle">Стандартный индекс (ИЗА)</string>
     <string name="info_map">Инфо карта</string>
