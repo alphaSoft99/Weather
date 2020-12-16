@@ -25,21 +25,6 @@ android {
         }
     }
 
-    signingConfigs {
-        /*debug {
-            storeFile file("../keystore/vendor.jks")
-            storePassword "20175555"
-            keyAlias "key0"
-            keyPassword "20175555"
-        }*/
-
-        release {
-            storeFile file("../climit.jks")
-            storePassword "20175555"
-            keyAlias "key0"
-            keyPassword "20175555"
-        }
-    }
 
     android.applicationVariants.all { variant ->
         variant.outputs.all {
